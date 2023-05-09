@@ -1,0 +1,285 @@
+.container-geral {
+  height: 529px;
+}
+.letras-rosa {
+  color: #F71963;
+}
+.letras-cinza {
+  color: #9F9F9F;
+}
+.letras {
+  font-family: 'Poppins';
+  font-style: normal;
+}
+.container-compras {
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 86px;
+  top: 0px;
+  height: 32px;
+  width: 1280px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.vetor-shield {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 262px;
+  top: 9.75px;
+}
+.posiciona-frase-shield {
+  position: absolute;
+  height: 18px;
+  width: 129px;
+  left: 291px;
+  top: 12px;
+  display: flex;
+}
+.vetor-frete {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 539px;
+  top: 11px;
+}
+.posiciona-frase-frete {
+  position: absolute;
+  height: 18px;
+  width: 174px;
+  left: 568px;
+}
+.vetor-cartao {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 861px;
+  top: 10.38px;
+}
+.posiciona-frase-cartao {
+  position: absolute;
+  height: 18px;
+  width: 136px;
+  left: 890px;
+}
+.container-input-vetor {
+  height: 72px;
+  width: 1280px;
+  top: 32px;
+  left: 86px;
+  display: flex;
+  position: absolute;
+}
+.vetor-vtex {
+  position: absolute;
+  left: 53px;
+  top: 7px;
+  color: #F71963;
+}
+#input1 {
+  position: absolute;
+  left: 290px;
+  top: 12px;
+  background: #F7F5F2;
+  background-image: url("../Images/MagnifyingGlass.png");
+  background-repeat: no-repeat;
+  background-position: 613px;
+  padding-left: 16.13px;
+  border-color: transparent;
+  border-radius: 10px;
+  background-size: 28px;
+  height: 48px;
+  width: 657px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9F9F9F;
+}
+.vetor-caixa {
+  position: absolute;
+  left: 1008px;
+  top: 25px;
+}
+.vetor-coracao {
+  position: absolute;
+  left: 1067px;
+  top: 26px;
+}
+.vetor-perfil {
+  position: absolute;
+  left: 1132px;
+  top: 24px;
+}
+.vetor-carrinho {
+  position: absolute;
+  left: 1192px;
+  top: 20px;
+  bottom: 20px;
+}
+.container-geral-categorias {
+  position: absolute;
+  height: 40px;
+  width: 1280px;
+  top: 104px;
+  left: 86px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #9F9F9F;
+}
+.container-categorias {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  width: 1141px;
+  left: 56px;
+  top: 1px;
+}
+.todas-categorias {
+  position: absolute;
+  width: 151px;
+  height: 18px;
+  left: 56px;
+  top: 10px;
+}
+.supermercado {
+  position: absolute;
+  width: 98px;
+  left: 268px;
+  height: 18px;
+  top: 10px;
+}
+.livros {
+  position: absolute;
+  width: 42px;
+  left: 457px;
+  top: 10px;
+}
+.moda {
+  position: absolute;
+  width: 38px;
+  left: 590px;
+  top: 10px;
+}
+.lancamentos {
+  position: absolute;
+  width: 91px;
+  left: 719px;
+  top: 10px;
+}
+.ofertas-do-dia {
+  position: absolute;
+  width: 97px;
+  left: 901px;
+  color: #F71963;
+  top: 10px;
+}
+.container-assinatura {
+  display: flex;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 1121px;
+  top: 10px;
+  gap: 13.52px;
+}
+#coroa {
+  height: 12.63px;
+  width: 16.96px;
+  top: 3.2px;
+}
+#assinatura {
+  height: 18px;
+  width: 76px;
+  top: 10px;
+}
+.container-descontos {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 395px;
+  width: 1443px;
+  left: -3px;
+  top: 144px;
+  opacity: 0.8;
+}
+.imagem-desconto {
+  position: absolute;
+  width: 1440px;
+  height: 390px;
+  left: 0px;
+}
+.container-imagem-descontos {
+  position: absolute;
+  width: 1440px;
+  height: 390px;
+  left: 0px;
+}
+.container-imagem-descontos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.paragrafo-desconto {
+  position: absolute;
+  width: 822px;
+  height: 128px;
+  left: 89px;
+  top: 52px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+.paragrafo-desconto-2 {
+  position: absolute;
+  width: 389px;
+  height: 54px;
+  left: 86px;
+  top: 196px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+  text-shadow: grey 0.1em 0.1em 0.2em;
+}
+.botao-desconto {
+  position: absolute;
+  width: 109px;
+  height: 27px;
+  left: 142px;
+  top: 285px;
+  background-color: #F71963;
+  border-radius: 5px;
+  border-color: transparent;
+}
+#frase-botao {
+  position: absolute;
+  width: 227px;
+  height: 60px;
+  left: 87px;
+  top: 301px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
