@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import '../Styles/CardsLayout.css';
 import tecnologia from "../Images/tecnologia.svg";
 import supermercado from "../Images/supermercados.svg";
@@ -10,39 +9,42 @@ import saude from "../Images/saude.svg";
 import moda from "../Images/moda.svg";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import Modal from "../Components/Modal"
+import Carousel from "../Components/Carousel";
+
 
 export const PaginaCards = () => {
 
-    const [data, setData] = useState([]);
-    const [isModalVisible, setModalVisible] = useState(false)
-    const dados = !data ? data : "carregando"
+    // const [data, setData] = useState([]);
+    // const [isModalVisible, setModalVisible] = useState(false)
+    // const dados = !data ? data : "carregando"
 
-    useEffect(() => {
-        axios.get("https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
-            .then((response) => {
-                setData(response.data.products)
-            })
-            .catch((error) => console.log(error))
-    }, [])
+    // useEffect(() => {
+    //     axios.get("https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json")
+    //         .then((response) => {
+    //             setData(response.data.products)
+    //         })
+    //         .catch((error) => console.log(error))
+    // }, [])
 
 
-    const listaProdutos = data && data.map((item) => {
-        return <div className="box-carousel" key={item.id}>
-            <div className="box-informacoes-carousel">
-                <div className="image-carousel">
-                    <img src={item.photo} alt={item.productName} />
-                </div>
-                <div className="descricao-produto">{item.descriptionShort}</div>
-                <div className="preco-antigo">R${((item.price * 0.1) + item.price).toFixed(2)}</div>
-                <div className="preco-novo">R${item.price.toFixed(2)}</div>
-                <div className="parcelamento">ou 2x de R$ {item.price / 2} sem juros</div>
-                <div className="frete-gratis">Frete grátis</div>
-                <button className="botao-carousel" onClick={()=> setModalVisible(true)}>COMPRAR</button>
-                {isModalVisible? <Modal /> : null}
-            </div>
-        </div>
-    })
+    // const listaProdutos = data && data.map((item) => {
+    //     return <div className="box-carousel" key={item.id}>
+    //         <Carousel>
+    //             <div className="box-informacoes-carousel">
+    //                 <div className="image-carousel">
+    //                     <img src={item.photo} alt={item.productName} />
+    //                 </div>
+    //                 <div className="descricao-produto">{item.descriptionShort}</div>
+    //                 <div className="preco-antigo">R${((item.price * 0.1) + item.price).toFixed(2)}</div>
+    //                 <div className="preco-novo">R${item.price.toFixed(2)}</div>
+    //                 <div className="parcelamento">ou 2x de R$ {item.price / 2} sem juros</div>
+    //                 <div className="frete-gratis">Frete grátis</div>
+    //                 <button className="botao-carousel" onClick={() => setModalVisible(true)}>COMPRAR</button>
+    //                 {isModalVisible ? <Modal /> : null}
+    //             </div>
+    //         </Carousel>
+    //     </div>
+    // })
 
     return (
         <div>
@@ -94,7 +96,7 @@ export const PaginaCards = () => {
             </div>
 
             <div className="carousel">
-                {listaProdutos}
+                <Carousel />
             </div>
 
             <div className="container-geral-parceiros">
@@ -118,7 +120,7 @@ export const PaginaCards = () => {
             </div>
 
             <div className="carousel2">
-                {listaProdutos}
+                <Carousel />
             </div>
 
             <span className="container-frase-marcas">Navegue por Marcas</span>
@@ -152,7 +154,7 @@ export const PaginaCards = () => {
             </div>
 
             <div className="carousel3">
-                {listaProdutos}
+                <Carousel />
             </div>
 
             <div className="container-geral-produtos">
